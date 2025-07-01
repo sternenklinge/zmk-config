@@ -1,29 +1,85 @@
+draw_config:
+  key_w: 60
+  key_h: 56
+  split_gap: 30.0
+  combo_w: 28
+  combo_h: 26
+  key_rx: 6.0
+  key_ry: 6.0
+  dark_mode: true
+  n_columns: 1
+  separate_combo_diagrams: false
+  combo_diagrams_scale: 2
+  inner_pad_w: 2.0
+  inner_pad_h: 2.0
+  outer_pad_w: 30.0
+  outer_pad_h: 56.0
+  line_spacing: 1.2
+  arc_radius: 6.0
+  append_colon_to_layer_header: true
+  small_pad: 2.0
+  legend_rel_x: 0.0
+  legend_rel_y: 0.0
+  draw_key_sides: false
+  key_side_pars:
+    rel_x: 0.0
+    rel_y: 4.0
+    rel_w: 12.0
+    rel_h: 12.0
+    rx: 4.0
+    ry: 4.0
+  svg_extra_style: ''
+  footer_text: sofle by zuko
+  shrink_wide_legends: 7
+  style_layer_activators: true
+  glyph_tap_size: 14
+  glyph_hold_size: 12
+  glyph_shifted_size: 12
+  glyphs: {}
 parse_config:
   zmk_additional_includes:
     - "modules/zmk/helpers/include"
 
   zmk_preamble: |
-    #include <zmk-helpers/key-labels/34.h>
+    #include <zmk-helpers/key-labels/sofle.h>
     #define CONFIG_WIRELESS
 
   raw_binding_map:
-    "&sys_reset": Reset
-    "&bootloader": Boot
-    "&caps_word": Caps Word
-
     "&bt BT_SEL 0": BT 1
     "&bt BT_SEL 1": BT 2
     "&bt BT_SEL 2": BT 3
     "&bt BT_SEL 3": BT 4
+    "&bt BT_SEL 4": BT 5
 
-    "&kp LC(INS)": Copy
+    # "&as DE_N1": {t: '!', h: 1}
+    # "&as DE_N2": {t: '"', h: 2}
+    # "&as DE_N3": {t: '§', h: 3}
+    # "&as DE_N4": {t: '$', h: 4}
+    # "&as DE_N5": {t: '%', h: 5}
+    # "&as DE_N6": {t: '&', h: 6}
+    # "&as DE_N7": {t: '/', h: 7}
+    # "&as DE_N8": {t: '(', h: 8}
+    # "&as DE_N9": {t: ')', h: 9}
+    # "&as DE_N0": {t: '=', h: 0}
+
+    "&as DE_N1": "1"
+    "&as DE_N2": "2"
+    "&as DE_N3": "3"
+    "&as DE_N4": "4"
+    "&as DE_N5": "5"
+    "&as DE_N6": "6"
+    "&as DE_N7": "7"
+    "&as DE_N8": "8"
+    "&as DE_N9": "9"
+    "&as DE_N0": "0"
+
     "&kp LC(X)": Cut
-    "&kp LS(INS)": Paste
+    "&kp LC(V)": Paste
 
-    "&kp LG(LC(LEFT))": Prev Desk
-    "&kp LG(LC(RIGHT))": Next Desk
-    "&kp LG(LC(LS(A)))": Pin App
-    "&kp LG(LC(LS(Q)))": Pin Win
+    # "&kp LG(LC(LEFT))": Prev Desk
+    # "&kp LG(LC(RIGHT))": Next Desk
+    # "&kp LG(LC(LS(A)))": Pin App
+    # "&kp LG(LC(LS(Q)))": Pin Win
 
     "&swapper": Next Win
     "&kp LS(TAB)": Prev Win
@@ -31,14 +87,6 @@ parse_config:
     "&num_dance": { "t": "Numword", "s": "Sticky Num" }
     "&magic_shift": { "t": Magic, "h": "Shift" }
     "&smart_mouse": Smart Mouse
-
-    "&hml LS(LALT)TAB": Tab
-    "&hm_combo_ldr": Leader
-    "&hm_combo_ldrsh": Shift+Leader
-    "&hm_combo_lpar": { "t": "(", "right": "<" }
-    "&hm_combo_rpar": { "t": ")", "right": ">" }
-    "&kp LBKT": { "t": "[", "right": "{" }
-    "&kp RBKT": { "t": "]", "right": "}" }
 
     "&mmv MOVE_UP": Mouse ↑
     "&mmv MOVE_DOWN": Mouse ↓
@@ -67,30 +115,9 @@ parse_config:
     combo_lbrc: { hidden: true }
     combo_rbrc: { hidden: true }
 
+  zmk_remove_keycode_prefix:
+  - "DE_"
   zmk_keycode_map:
-    # custom mappings
-    LALT: Alt
-    RALT: Alt
-    LCTRL: Ctrl
-    RCTRL: Ctrl
-    LGUI: Gui
-    RGUI: Gui
-    LSHFT: Shift
-    RSHFT: Shift
-
-    BSPC: Bspc
-    DEL: Del
-    ESC: Esc
-    RET: Enter
-    SPACE: Spc
-    TAB: Tab
-
-    PG_UP: PgUp
-    PG_DN: PgDn
-    INS: Ins
-    HOME: Home
-    END: End
-
     UP: ↑
     DOWN: ↓
     LEFT: ←

@@ -1,0 +1,252 @@
+layout: {zmk_keyboard: sofle/rev2}
+layers:
+  def: [ESC, '1', '2', '3', '4', '5', '6', '7', '8', '9', '0', '&as DE_SZ', TAB, Q, W, E, R, T, Z, U, I, O, P, U UMLAUT, '&smart_shft', A, S, D, F, G, H, J, K, L,
+    O UMLAUT, A UMLAUT, LCTRL, Y, X, C, V, B, '$$mdi:volume-off$$', '', N, M, '&as DE_COMMA', '&as DE_DOT', '&as DE_MINUS', RCTRL, LGUI, LALT, '&smart_bs_del', '&spc_enter',
+    '&SMART_SYM_NAV', '&SMART_NAV_SYM', '&spc_enter', RSHIFT, RALT, '&bs_del']
+  sym:
+  - F1
+  - F2
+  - F3
+  - F4
+  - F5
+  - F6
+  - F7
+  - F8
+  - F9
+  - F10
+  - F11
+  - F12
+  - '&as DE_CARET'
+  - '&ras DE_N1'
+  - '&ras DE_N2'
+  - '&ras DE_N3'
+  - '&ras DE_N4'
+  - '&ras DE_N5'
+  - '&ras DE_N6'
+  - '&ras DE_N7'
+  - '&ras DE_N8'
+  - '&ras DE_N9'
+  - '&ras DE_N0'
+  - '&as DE_GRAVE'
+  - '&smart_shft'
+  - ''
+  - {t: '@', h: EURO}
+  - {t: '*', h: /}
+  - {t: +, h: '-'}
+  - {t: '=', h: '|'}
+  - {t: '?', h: '!'}
+  - '&as DE_DOT'
+  - '&as DE_COMMA'
+  - '&as DE_MINUS'
+  - {t: '"', h: ''''}
+  - ''
+  - LCTRL
+  - {t: '~', h: '#'}
+  - {t: \, h: <}
+  - '{'
+  - (
+  - '['
+  - ''
+  - ''
+  - ']'
+  - )
+  - '}'
+  - {t: /, h: '>'}
+  - {t: '~', h: '|'}
+  - LCTRL
+  - Next Win
+  - LALT
+  - '&smart_bs_del'
+  - '&spc_enter'
+  - sym
+  - sym
+  - '&spc_enter'
+  - LSHIFT
+  - LALT
+  - Next Win
+  num:
+  - ESC
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - TAB
+  - ''
+  - {t: '*', h: /}
+  - '7'
+  - '8'
+  - '9'
+  - '9'
+  - '8'
+  - '7'
+  - {t: '*', h: /}
+  - ''
+  - ''
+  - '&smart_shft'
+  - ''
+  - {t: +, h: '-'}
+  - '4'
+  - '5'
+  - '6'
+  - '6'
+  - '5'
+  - '4'
+  - {t: +, h: '-'}
+  - ''
+  - ''
+  - LCTRL
+  - ''
+  - '0'
+  - '1'
+  - '2'
+  - '3'
+  - ''
+  - ''
+  - '3'
+  - '2'
+  - '1'
+  - '0'
+  - ''
+  - ''
+  - LGUI
+  - LALT
+  - '&smart_bs_del'
+  - '&spc_enter'
+  - num
+  - num
+  - '&spc_enter'
+  - LSHIFT
+  - LALT
+  - LCTRL
+  nav:
+  - ESC
+  - PREVIOUS
+  - REWIND
+  - PLAY PAUSE
+  - FAST FORWARD
+  - $$mdi:skip-forward$$
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - TAB
+  - {t: X, h: D}
+  - {t: I, h: A}
+  - {t: W, h: B}
+  - {t: Y, h: P}
+  - {t: U, h: Ctl+R}
+  - {t: HOME, h: Ctl+HOME}
+  - PG DN
+  - PG UP
+  - {t: END, h: Ctl+END}
+  - ''
+  - ''
+  - '&smart_shft'
+  - {t: HOME, h: END}
+  - ←
+  - ↑
+  - ↓
+  - →
+  - ←
+  - ↓
+  - ↑
+  - →
+  - ''
+  - ''
+  - LCTRL
+  - Ctl+A
+  - Ctl+S
+  - {t: Ctl+C, h: Cut}
+  - Paste
+  - {t: Ctl+Z, h: Ctl+Y}
+  - ''
+  - ''
+  - Scroll ←
+  - Scroll ↓
+  - Scroll ↑
+  - Scroll →
+  - ''
+  - LCTRL
+  - Next Win
+  - LALT
+  - '&smart_bs_del'
+  - '&spc_enter'
+  - nav
+  - nav
+  - '&spc_enter'
+  - LSHFT
+  - LALT
+  - Next Win
+  mouse: ['', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', Mouse ←, Mouse ↑, Mouse ↓, Mouse →, Mouse ←, Mouse
+      ↓, Mouse ↑, Mouse →, '', '', '', '', Scroll ←, Scroll ↑, Scroll ↓, Scroll →, '', '', Scroll ←, Scroll ↓, Scroll ↑, Scroll →, '', '', '', Middle Click, Right
+      Click, Left Click, '', '', Left Click, Right Click, Middle Click, '']
+  fn:
+  - OUT TOG
+  - BT 1
+  - BT 2
+  - BT 3
+  - BT 4
+  - BT 5
+  - {t: BT DISC, h: '0'}
+  - {t: BT DISC, h: '1'}
+  - {t: BT DISC, h: '2'}
+  - {t: BT DISC, h: '3'}
+  - {t: BT DISC, h: '4'}
+  - BT CLR
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - '&studio_unlock'
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - BT CLR ALL
+  - '&soft_off'
+  - EP TOG
+  - ''
+  - ''
+  - {t: fn, h: toggle}
+  - {t: fn, h: toggle}
+  - CANCEL
+  - ''
+  - EP TOG
+  - '&soft_off'

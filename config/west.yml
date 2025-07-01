@@ -26,6 +26,13 @@ manifest:
       url-base: https://github.com/urob
     - name: zmkfirmware
       url-base: https://github.com/zmkfirmware
+    - name: gpeye
+      url-base: https://github.com/GPeye
+    - name: joelspadin
+      url-base: https://github.com/joelspadin
+    - name: M165437
+      url-base: https://github.com/M165437
+
 
   projects:
     - name: zmk
@@ -43,6 +50,15 @@ manifest:
       path: modules/zmk/leader-key
     - name: zmk-tri-state
       path: modules/zmk/tri-state
+    - name: zmk-locales
+      remote: joelspadin
+      revision: main
+    - name: hammerbeam-slideshow
+      remote: gpeye
+      revision: main
+    - name: nice-view-gem
+      remote: M165437
+      revision: main
 
     # Temporarily overload Zephyr until
     # https://github.com/zmkfirmware/zephyr/pull/40 is merged.
